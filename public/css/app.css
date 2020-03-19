@@ -1,20 +1,25 @@
 body {
     color: black;
-    margin: 0px;
+    width: 100%;
+    margin: 0;
     font-family: sans-serif;
 }
 
-header {
-    color: white;
-    background-color: #26272b;
-    height: 390px;
-    padding-top: 80px;
-}
+
 a:link{
     text-decoration: none;
 }
 
 /** Header**/
+
+header {
+    color: white;
+    background-color: #26272b;
+    height: 390px;
+    padding-top: 30px;
+    width: 100%;
+}
+
 header nav {
     bottom: 0;
     height: 60px;
@@ -102,6 +107,8 @@ header nav a:hover {
     margin-top: 90px;
 }
 
+
+
 #experiences h3{
     margin: 0 auto;
 }
@@ -179,15 +186,7 @@ header nav a:hover {
     }
 }
 
-@media (max-width:767px) {
-    .site-footer {
-        padding-bottom: 0
-    }
-    .site-footer .copyright-text,
-    .site-footer .social-icons {
-        text-align: center
-    }
-}
+
 
 .social-icons {
     padding-left: 0;
@@ -251,6 +250,14 @@ header nav a:hover {
 }
 
 @media (max-width:767px) {
+    .site-footer {
+        padding-bottom: 0
+    }
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+        text-align: center
+    }
+
     .social-icons li.title {
         display: block;
         margin-right: 0;
@@ -261,12 +268,27 @@ header nav a:hover {
         margin-left: 20px;
     }
 
+
+
 }
 
 @media (max-width:500px) {
     nav {
         margin-top: -20px;
     }
+    #contact input, #contact textarea{
+        width: 220px;
+        font-size: 10pt;
+    }
+    .content-skills{
+        justify-items: center;
+        justify-content: center;
+        width: 320px;
+    }
+    #experiences .panel{
+        width: 280px;
+    }
+
 }
 
 /**Contact**/

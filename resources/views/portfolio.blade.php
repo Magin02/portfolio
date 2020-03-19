@@ -13,7 +13,9 @@
 </head>
 
 <body>
+<div class="container"></div>
 <header class="text-center ">
+
     <img src="/me.jpeg" id="profile-picture" />
     <div class="title ">
         <h1> Gabriel Leal</h1>
@@ -100,12 +102,11 @@
 
     </section>
 
-    <section id="experiences">
-        <div class="row experience-header">
+    <section id="experiences" class="text-center">
+        <div class="experience-header">
             <h3>Experiências</h3>
         </div>
 
-        <div class="row ">
             <div class="panel ">
                 <h3><a href="https://github.com/Magin02/ShagasSystem/"> Shagas System</a></h3>
                 <p>
@@ -121,8 +122,6 @@
                 </p>
 
             </div>
-        </div>
-        <div class="row ">
 
             <div class="panel ">
                 <h3>
@@ -138,7 +137,6 @@
                     Durante 1 ano letivo tive a oportunidade de dar monitoria na ETEC Prof. Marcos Uchoas Dos Santos Penchel no meu ultimo ano, nessa monitoria foi trabalhado principalmente a lógica de programação e o raciocínio envolvido.
                 </p>
             </div>
-        </div>
 
     </section>
 
@@ -175,7 +173,7 @@
 </div>
 
 <!-- Site footer -->
-<footer class="site-footer row ">
+<footer class="site-footer ">
     <div class="container ">
         <div class="col-md-8 col-sm-6 col-xs-12 ">
             <p class="copyright-text ">Gabriel Leal &copy;<br>
