@@ -47,8 +47,8 @@ class MessageController extends Controller
             'content' => $request->get('content')]);
 
         $message->save();
-
-        return redirect()->route('portfolio.index')->with('success', 'Mensagem enviada com sucesso');
+        $message->sendMessageTelegram();
+        return redirect()->route('portfolio.index')->with('success', 'Mensagem enviada com sucesso!');
     }
 
     /**
