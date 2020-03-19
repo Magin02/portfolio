@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel=" stylesheet " type="text/css " media="screen " href="/css/app.css" />
-    <script src="main.js "></script>
 </head>
 
 <body>
@@ -19,10 +19,10 @@
         <h1> Gabriel Leal</h1>
         <h3> Desenvolvedor back-end e estudante</h3>
         <nav>
-            <a href="#">Sobre Mim</a>
-            <a href="#skills ">Habilidades</a>
-            <a href="#experiences">Expêriencias</a>
-            <a href="#contact">Contato</a>
+            <a class="scroll" href="#">Sobre Mim</a>
+            <a class="scroll" href="#skills ">Habilidades</a>
+            <a class="scroll" href="#experiences">Experiências</a>
+            <a class="scroll" href="#contact">Contato</a>
         </nav>
     </div>
 </header>
@@ -42,7 +42,7 @@
     <section id="skills" class="row d-flex justify-content-center text-center">
         <div class="header-skills ">
             <h3 >Habilidades e tecnologias</h3>
-            <p>Algumas das habilidades e tecnologias que tive experiencia e estudei sobre.</p>
+            <p>Algumas das habilidades e tecnologias que tive experiência e estudei sobre.</p>
         </div>
         <div class="content-skills row ">
             <div class="skill ">
@@ -107,7 +107,7 @@
 
         <div class="row ">
             <div class="panel ">
-                <h3><a href="#"> Shagas System</a></h3>
+                <h3><a href="https://github.com/Magin02/ShagasSystem/"> Shagas System</a></h3>
                 <p>
                     Shagas System é um projeto com intuito de auxiliar no dia-a-dia de casas de repouso para idosos. Por meio desse sistema é possivel agendar visitas, uma agenda e atividades para cada idoso.
                 </p>
@@ -115,7 +115,7 @@
             </div>
 
             <div class="panel">
-                <h3>SFG</h3>
+                <h3 data-toggle="tooltip" data-placement="top" title="Repositório privado">SFG</h3>
                 <p>
                     SGF foi o meu TCC para o curso técnico de informática, ele tem a proposta de gerenciar todo o fluxo de um establecimento de vendas, ajudando no controle financeiro e de estoque, ele é dividido em 2 partes o sistema desktop e o mobile.
                 </p>
@@ -128,14 +128,14 @@
                 <h3>
                     <a href="https://busque.dev "> BusqueDev</a></h3>
                 <p>
-                    Atualmente faço parte de um projeto em desenvolvimento chamado BusqueDev junto com a comunidade <a href="https://heartdevs.com/">He4rt Devs</a>, uma plataforma onde o desenvolvedor pode criar seu portfolio e disponibilizar para todos.
+                    Atualmente faço parte de um projeto em desenvolvimento chamado BusqueDev junto com a comunidade <a href="https://heartdevs.com/">He4rt Devs</a>, uma plataforma onde o desenvolvedor pode criar seu portfólio e disponibilizar para todos.
 
             </div>
 
             <div class="panel ">
                 <h3>Monitoria</h3>
                 <p>
-                    Durante 1 ano letivo tive a oportunidade de dar monitoria na ETEC Prof. Marcos Uchoas Dos Santos Penchel no meu ultimo ano, nessa monitoria foi trabalhado principalmente a lógica de programação e o raciocinio envolvido.
+                    Durante 1 ano letivo tive a oportunidade de dar monitoria na ETEC Prof. Marcos Uchoas Dos Santos Penchel no meu ultimo ano, nessa monitoria foi trabalhado principalmente a lógica de programação e o raciocínio envolvido.
                 </p>
             </div>
         </div>
@@ -164,7 +164,7 @@
             <input name="name" placeholder="Seu nome " type="text " tabindex="1 " required>
             <input name="email" placeholder="seu@email.com " type="email " tabindex="2 " required>
             <input name="subject" placeholder="Assunto da mensagem " type="text " tabindex="4 " required>
-            <textarea name="content" placeholder="Conteudo da mensagem " rows="3 " tabindex="5 " required></textarea>
+            <textarea name="content" placeholder="Conteúdo da mensagem " rows="3 " tabindex="5 " required></textarea>
             <div class="form-group">
                 <input type="submit" class="btn btn_primary button" value="Enviar">
             </div>
@@ -194,6 +194,19 @@
         </div>
     </div>
 </footer>
+
+
+<script>
+    $('.scroll').on('click', function(e) {
+        e.preventDefault();
+        var id = $(this).attr('href'),
+            targetOffset = $(id).offset().top;
+
+        $('html, body').animate({
+            scrollTop: targetOffset - 100
+        }, 500);
+    });
+</script>
 
 </body>
 

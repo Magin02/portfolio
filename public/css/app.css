@@ -257,8 +257,17 @@ header nav a:hover {
         font-weight: 600
     }
 
+    #contact form{
+        margin-left: 20px;
+    }
+
 }
 
+@media (max-width:500px) {
+    nav {
+        margin-top: -20px;
+    }
+}
 
 /**Contact**/
 
