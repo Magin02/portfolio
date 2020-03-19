@@ -268,6 +268,9 @@ header nav a:hover {
         margin-left: 20px;
     }
 
+    .about-me{
+        height: 340px;
+    }
 
 
 }
@@ -287,6 +290,9 @@ header nav a:hover {
     }
     #experiences .panel{
         width: 280px;
+    }
+    .about-me{
+        height: 440px;
     }
 
 }
