@@ -8,13 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel=" stylesheet " type="text/css " media="screen " href="{{asset('css/app.css')}}" />
+    <link rel=" stylesheet " type="text/css " media="screen " href="/css/app.css" />
     <script src="main.js "></script>
 </head>
 
 <body>
 <header class="text-center ">
-    <img src="{{asset('me.jpeg')}} " id="profile-picture" />
+    <img src="/me.jpeg" id="profile-picture" />
     <div class="title ">
         <h1> Gabriel Leal</h1>
         <h3> Desenvolvedor back-end e estudante</h3>
