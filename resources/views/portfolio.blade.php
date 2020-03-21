@@ -54,7 +54,7 @@
                 <hr class="underline-skill ">
             </div>
             <div class="skill ">
-                <h4>Javafx</h4>
+                <h4>JavaFx</h4>
                 <p class="text-center " style="font-size: 9pt; ">6 meses ~ <br> 1 ano
                 </p>
                 <hr class="underline-skill ">
@@ -116,7 +116,7 @@
             </div>
 
             <div class="panel">
-                <h3 data-toggle="tooltip" data-placement="top" title="Repositório privado">SFG</h3>
+                <h3 data-toggle="tooltip" data-placement="top" title="Repositório privado">SGF</h3>
                 <p>
                     SGF foi o meu TCC para o curso técnico de informática, ele tem a proposta de gerenciar todo o fluxo de um establecimento de vendas, ajudando no controle financeiro e de estoque, ele é dividido em 2 partes o sistema desktop e o mobile.
                 </p>
