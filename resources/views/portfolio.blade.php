@@ -66,8 +66,8 @@
                 <hr class="underline-skill ">
             </div>
             <div class="skill ">
-                <h4>SQL</h4>
-                <p class="text-center " style="font-size: 9pt; ">2 anos ~ <br> 3 anos
+                <h4>Git</h4>
+                <p class="text-center " style="font-size: 9pt; ">6 meses ~ <br> 1 ano
                 </p>
                 <hr class="underline-skill ">
             </div>
