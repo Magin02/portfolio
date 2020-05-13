@@ -34,8 +34,7 @@
         <i class="fa fa-user"></i>
         <h3>Sobre mim</h3>
         <p>
-            Olá me chamo Gabriel Leal, tenho 18 anos. Comecei a programar há 3 anos quando tive que fazer um sistema para um curso técnico de informática, esse sistema abriu minha mente á programação e desde aquele trabalho venho me empenhando para aprender cada
-            dia mais. Hoje faço o curso de Análise e desenvolvimento de Sistemas na Fatec prof. Waldemiro May - Cruzeiro/SP
+            Olá me chamo Gabriel Leal, tenho. Comecei a programar há 3 anos pela linguagem Java, depois de 2 anos mudei para desenvolvimento Web focado na parte de back-end, desde essa mudança venho focando em aprender cada vez mais sobre. Hoje sou programador focado em PHP e Laravel emas com conhecimentos em outras linguagens Web como: Html/Css , Javascript e Vue.
         </p>
 
     </div>
@@ -54,18 +53,6 @@
                 <hr class="underline-skill ">
             </div>
             <div class="skill ">
-                <h4>JavaFx</h4>
-                <p class="text-center " style="font-size: 9pt; ">6 meses ~ <br> 1 ano
-                </p>
-                <hr class="underline-skill ">
-            </div>
-            <div class="skill ">
-                <h4>Hibernate</h4>
-                <p class="text-center " style="font-size: 9pt; ">6 meses ~ <br> 1 ano
-                </p>
-                <hr class="underline-skill ">
-            </div>
-            <div class="skill ">
                 <h4>Git</h4>
                 <p class="text-center " style="font-size: 9pt; ">6 meses ~ <br> 1 ano
                 </p>
@@ -73,7 +60,7 @@
             </div>
             <div class="skill ">
                 <h4>MySQL</h4>
-                <p class="text-center " style="font-size: 9pt; ">2 anos ~ <br> 3 anos
+                <p class="text-center " style="font-size: 9pt; ">1 anos ~ <br> 2 anos
                 </p>
                 <hr class="underline-skill ">
             </div>
@@ -83,16 +70,28 @@
                 </p>
                 <hr class="underline-skill ">
             </div>
+            <div class="skill ">
+                <h4>HTML/CSS</h4>
+                <p class="text-center " style="font-size: 9pt; ">1 ano ~ <br> 2 anos
+                </p>
+                <hr class="underline-skill ">
+            </div>
+            <div class="skill ">
+                <h4>Javascript</h4>
+                <p class="text-center " style="font-size: 9pt; ">1 mes ~ <br> 6 meses
+                </p>
+                <hr class="underline-skill ">
+            </div>
 
             <div class="skill ">
                 <h4>PHP</h4>
-                <p class="text-center " style="font-size: 9pt; ">1 mês ~ <br> 6 meses
+                <p class="text-center " style="font-size: 9pt; ">6 meses ~ <br> 1 ano
                 </p>
                 <hr class="underline-skill ">
             </div>
             <div class="skill ">
                 <h4>Laravel</h4>
-                <p class="text-center " style="font-size: 9pt; ">1 mês ~ <br> 6 meses
+                <p class="text-center " style="font-size: 9pt; ">6 meses ~ <br>  1 ano
                 </p>
                 <hr class="underline-skill ">
             </div>
@@ -108,27 +107,28 @@
         </div>
 
             <div class="panel ">
-                <h3><a href="https://github.com/Magin02/ShagasSystem/"> Shagas System</a></h3>
+                <h3><a href="https://github.com/Magin02/snippets-book-api"> Snippets book</a></h3>
                 <p>
-                    Shagas System é um projeto com intuito de auxiliar no dia-a-dia de casas de repouso para idosos. Por meio desse sistema é possivel agendar visitas, uma agenda e atividades para cada idoso.
+                    Snippets book  é uma rede social para desenvolvedores onde os posts serão snippets.
+                    Nesse projeto pude aprender mais com laravel e seus recursos, utilizei o gitflow para organizar todo o back-end.
+                    O front-end ainda está sendo feito em VueJs.
                 </p>
 
             </div>
 
             <div class="panel">
-                <h3 data-toggle="tooltip" data-placement="top" title="Repositório privado">SGF</h3>
+                <h3><a href="https://github.com/Magin02/snippets-book-api">Portfolio</a></h3>
                 <p>
-                    SGF foi o meu TCC para o curso técnico de informática, ele tem a proposta de gerenciar todo o fluxo de um establecimento de vendas, ajudando no controle financeiro e de estoque, ele é dividido em 2 partes o sistema desktop e o mobile.
+                    Meu portfolio foi feito totalmente em Laravel e procurei fazer algo bem limpo para demonstrar minhas capacidades técnicas de forma melhor e prática com uma pagina simples e um sistema de mensagens.
                 </p>
 
             </div>
 
             <div class="panel ">
                 <h3>
-                    <a href="https://busque.dev "> BusqueDev</a></h3>
+                    <a href="https://busque.dev "> InfoNow</a></h3>
                 <p>
-                    Atualmente faço parte de um projeto em desenvolvimento chamado BusqueDev junto com a comunidade <a href="https://heartdevs.com/">He4rt Devs</a>, uma plataforma onde o desenvolvedor pode criar seu portfólio e disponibilizar para todos.
-
+                InfoNow será uma plataforma de artigos com o foco de estudo, essa plataforma será feita em php com o objetivo de me aprofundar mais na linguagem sem frameworks.
             </div>
 
             <div class="panel ">
