@@ -117,7 +117,7 @@
             </div>
 
             <div class="panel">
-                <h3><a href="https://github.com/Magin02/snippets-book-api">Portfolio</a></h3>
+                <h3><a href="https://github.com/Magin02/portfolio">Portfolio</a></h3>
                 <p>
                     Meu portfolio foi feito totalmente em Laravel e procurei fazer algo bem limpo para demonstrar minhas capacidades técnicas de forma melhor e prática com uma pagina simples e um sistema de mensagens.
                 </p>
