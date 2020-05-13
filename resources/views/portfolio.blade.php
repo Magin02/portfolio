@@ -126,7 +126,7 @@
 
             <div class="panel ">
                 <h3>
-                    <a href="https://busque.dev "> InfoNow</a></h3>
+                    <a href="https://github.com/Magin02/info-now"> InfoNow</a></h3>
                 <p>
                 InfoNow será uma plataforma de artigos com o foco de estudo, essa plataforma será feita em php com o objetivo de me aprofundar mais na linguagem sem frameworks.
             </div>
