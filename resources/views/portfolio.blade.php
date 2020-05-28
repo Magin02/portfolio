@@ -34,7 +34,7 @@
         <i class="fa fa-user"></i>
         <h3>Sobre mim</h3>
         <p>
-            Olá me chamo Gabriel Leal, tenho. Comecei a programar há 3 anos pela linguagem Java, depois de 2 anos mudei para desenvolvimento Web focado na parte de back-end, desde essa mudança venho focando em aprender cada vez mais sobre. Hoje sou programador focado em PHP e Laravel emas com conhecimentos em outras linguagens Web como: Html/Css , Javascript e Vue.
+            Olá me chamo Gabriel Leal. Comecei a programar há 3 anos pela linguagem Java, depois de 2 anos mudei para desenvolvimento Web focado na parte de back-end, desde essa mudança venho focando em aprender cada vez mais sobre. Hoje sou programador focado em PHP e Laravel emas com conhecimentos em outras linguagens Web como: Html/Css , Javascript e Vue.
         </p>
 
     </div>
