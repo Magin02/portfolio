@@ -177,7 +177,7 @@
     <div class="container ">
         <div class="col-md-8 col-sm-6 col-xs-12 ">
             <p class="copyright-text ">Gabriel Leal &copy;<br>
-                gabriel.britto@fatec.sp.gov.br
+                gabrielleal.mb@protonmail.com
             </p>
         </div>
 
@@ -187,7 +187,7 @@
                 <li><a class="twitter " href="https://twitter.com/Magin02 "><i class="fa fa-twitter "></i></a></li>
                 <li><a class="facebook " href="https://www.facebook.com/gabriel.leal.77985"><i class="fa fa-facebook "></i></a></li>
                 <li><a class="linkedin " href="https://www.linkedin.com/in/gabriel-leal-2b6663195"><i class="fa fa-linkedin "></i></a></li>
-                <li><a class="email " href="mailto:gabriel.britto@fatec.sp.gov.br"><i class="fa fa-envelope"></i></a></li>
+                <li><a class="email " href="mailto:gabrielleal.mb@protonmail.com"><i class="fa fa-envelope"></i></a></li>
             </ul>
         </div>
     </div>
