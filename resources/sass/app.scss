@@ -1,1 +1,398 @@
-//
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+body {
+    width: 100%;
+    font-family: sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+/** Header**/
+
+header {
+    color: white;
+    background-color: #26272b;
+    height: 390px;
+    padding-top: 30px;
+    width: 100%;
+}
+
+header nav {
+    line-height: 60px;
+}
+
+header nav a {
+    color: #fff;
+    display: inline-block;
+    padding: 10px 15px;
+    line-height: 1;
+    border-radius: 2px;
+}
+
+header nav a:hover {
+    color: #fff;
+    box-shadow: 0 0 0 1px #fff;
+}
+
+form {
+    padding: 0;
+    width: 30%;
+    margin: 0 auto;
+}
+
+input:not(:last-child) {
+    width: 400px;
+    border: solid 1px #26272b;
+    outline: none;
+    padding: 0;
+    margin: 0.7em 0;
+    background-color: rgba(0, 0, 0, 0);
+    line-height: 40px;
+    border-radius: 8px;
+}
+
+textarea {
+    width: 400px;
+    resize: none;
+    outline: none;
+    padding: 0;
+    margin: 0.7em 0;
+    line-height: 35px;
+    border: solid 1px #26272b;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 8px;
+}
+
+
+/** End Header **/
+
+#profile-picture {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.panel {
+    padding: 12px;
+    display: inline-block;
+    font-size: smaller;
+    height: 228px;
+    width: 340px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.panel p {
+    margin-top: 20px;
+}
+
+.about-me {
+    height: 290px;
+    width: 650px;
+    font-size: 40pt;
+    margin: 90px 0;
+}
+
+.about-me p {
+    font-size: 16px;
+}
+
+.skill {
+    margin: 30px;
+}
+
+#experiences {
+    margin-top: 90px;
+}
+
+#experiences h3 {
+    margin-bottom: 30px;
+}
+
+.button {
+    width: 140px;
+    height: 60px;
+    border-color: #26272b;
+    color: #26272b;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 150ms ease-in-out;
+    background-color: transparent;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+.button:hover {
+    color: #000;
+}
+
+/* Footer */
+
+.site-footer {
+    background-color: #26272b;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+}
+
+.site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5;
+}
+
+.site-footer hr.small {
+    margin: 20px 0;
+}
+
+.site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+.site-footer .social-icons {
+    text-align: right;
+}
+
+.site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #33353d;
+}
+
+.copyright-text {
+    margin: 0;
+}
+
+@media (max-width: 991px) {
+    .site-footer [class^=col-] {
+        margin-bottom: 30px;
+    }
+}
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    transition: all 0.2s linear;
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe;
+}
+
+.social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px;
+}
+
+.social-icons a.github:hover {
+    background-color: #333;
+}
+
+.social-icons a.twitter:hover {
+    background-color: #00aced;
+}
+
+.social-icons a.linkedin:hover {
+    background-color: #007bb6;
+}
+
+.social-icons a.facebook:hover {
+    background-color: #4267B2;
+}
+
+.social-icons a.email:hover {
+    background-color: #d93025;
+}
+
+@media (max-width: 767px) {
+    .site-footer {
+        padding-bottom: 0;
+    }
+
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+        text-align: center;
+    }
+
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600;
+    }
+
+    #contact form {
+        margin-left: 20px;
+    }
+
+    .about-me {
+        height: 340px;
+    }
+}
+
+@media (max-width: 500px) {
+    nav {
+        margin-top: -20px;
+    }
+
+    #contact input,
+    #contact textarea {
+        width: 220px;
+        font-size: 10pt;
+    }
+
+    .content-skills {
+        justify-items: center;
+        justify-content: center;
+        width: 320px;
+    }
+
+    #experiences .panel {
+        width: 280px;
+    }
+
+    .about-me {
+        height: 440px;
+    }
+}
+
+/**Contact**/
+
+#contact {
+    margin-top: 90px;
+}
+
+
+::-webkit-input-placeholder {
+    color: #26272b;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 1em;
+}
+
+::-moz-placeholder {
+    color: #26272b;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 1em;
+}
+
+:-ms-input-placeholder {
+    color: #26272b;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 1em;
+}
+
+:-moz-placeholder {
+    color: #26272b;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.projects-list {
+    border: 1px solid #ccc;
+    padding: 10px 0 5px 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.projects-list > li {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.projects-list > li.open .list-header:after {
+    transform: rotate(180deg);
+}
+
+.projects-list > li.open .list-content {
+    max-height: 1000px;
+    transition: max-height 0.5s ease-in;
+}
+
+.projects-list .list-header {
+    position: relative;
+    padding: 5px 0 5px 0;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.projects-list .list-header:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    border-style: solid;
+    border-width: 18px 12px 0 12px;
+    border-color: #757575 transparent transparent transparent;
+    transition: transform 0.5s ease-in;
+}
+
+.projects-list .list-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s cubic-bezier(0, 1.05, 0, 1);
+}
+
+.list-content-inner {
+    padding: 0 45px 30px;
+}
+
+.projects-icons {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 55px;
+}

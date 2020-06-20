@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel=" stylesheet " type="text/css " media="screen " href="/css/app.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 
 <body>
-<div class="container"></div>
 <header class="text-center ">
 
-    <img src="/me.jpeg" id="profile-picture" />
+    <img alt="me" src="/me.jpeg" id="profile-picture" />
     <div class="title ">
         <h1> Gabriel Leal</h1>
         <h3> Desenvolvedor back-end e estudante</h3>
@@ -29,16 +30,15 @@
     </div>
 </header>
 
-<div class="container ">
+<div class="container" id="app">
     <div class="panel about-me row ">
         <i class="fa fa-user"></i>
         <h3>Sobre mim</h3>
         <p>
-            Olá me chamo Gabriel Leal. Comecei a programar há 3 anos pela linguagem Java, depois de 2 anos mudei para desenvolvimento Web focado na parte de back-end, desde essa mudança venho focando em aprender cada vez mais sobre. Hoje sou programador focado em PHP e Laravel emas com conhecimentos em outras linguagens Web como: Html/Css , Javascript e Vue.
+            Olá me chamo Gabriel Leal. Comecei a programar há 3 anos pela linguagem Java, depois de 2 anos mudei para desenvolvimento Web focado na parte de back-end, desde essa mudança venho focando em aprender cada vez mais sobre. Hoje sou programador focado em PHP e Laravel e com conhecimentos em outras linguagens Web como: Html/Css , Javascript e Vue.
         </p>
 
     </div>
-
 
     <section id="skills" class="row d-flex justify-content-center text-center">
         <div class="header-skills ">
@@ -46,123 +46,113 @@
             <p>Algumas das habilidades e tecnologias que tive experiência e estudei sobre.</p>
         </div>
         <div class="content-skills row ">
-            <div class="skill ">
-                <h4>Java</h4>
-                <p class="text-center " style="font-size: 9pt; ">2 anos ~ <br> 3 anos
-                </p>
-                <hr class="underline-skill ">
-            </div>
-            <div class="skill ">
-                <h4>Git</h4>
-                <p class="text-center " style="font-size: 9pt; ">6 meses ~ <br> 1 ano
-                </p>
-                <hr class="underline-skill ">
-            </div>
-            <div class="skill ">
-                <h4>MySQL</h4>
-                <p class="text-center " style="font-size: 9pt; ">1 anos ~ <br> 2 anos
-                </p>
-                <hr class="underline-skill ">
-            </div>
-            <div class="skill ">
-                <h4>Linux</h4>
-                <p class="text-center " style="font-size: 9pt; ">1 ano ~ <br> 2 anos
-                </p>
-                <hr class="underline-skill ">
-            </div>
-            <div class="skill ">
-                <h4>HTML/CSS</h4>
-                <p class="text-center " style="font-size: 9pt; ">1 ano ~ <br> 2 anos
-                </p>
-                <hr class="underline-skill ">
-            </div>
-            <div class="skill ">
-                <h4>Javascript</h4>
-                <p class="text-center " style="font-size: 9pt; ">1 mes ~ <br> 6 meses
-                </p>
-                <hr class="underline-skill ">
-            </div>
-
-            <div class="skill ">
-                <h4>PHP</h4>
-                <p class="text-center " style="font-size: 9pt; ">6 meses ~ <br> 1 ano
-                </p>
-                <hr class="underline-skill ">
-            </div>
-            <div class="skill ">
-                <h4>Laravel</h4>
-                <p class="text-center " style="font-size: 9pt; ">6 meses ~ <br>  1 ano
-                </p>
-                <hr class="underline-skill ">
-            </div>
-
+            <skill skill="Java" average-begun="2 anos" average-finished="3 anos" color="#003c8f"></skill>
+            <skill skill="Git" average-begun="6 meses" average-finished="1 ano" color="#003c8f"></skill>
+            <skill skill="MySQL" average-begun="1 ano" average-finished="2 anos" color="#003c8f"></skill>
+            <skill skill="Linux" average-begun="1 ano" average-finished="2 anos" color="#003c8f"></skill>
+            <skill skill="HTML/CSS" average-begun="1 ano" average-finished="2 anos" color="#003c8f"></skill>
+            <skill skill="Javascript" average-begun="1 mês" average-finished="6 meses" color="#003c8f"></skill>
+            <skill skill="PHP" average-begun="6 meses" average-finished="1 ano" color="#003c8f"></skill>
+            <skill skill="Laravel" average-begun="6 meses" average-finished="1 ano" color="#003c8f"></skill>
         </div>
 
 
     </section>
 
-    <section id="experiences" class="text-center">
-        <div class="experience-header">
-            <h3>Experiências</h3>
+    <section id="experiences" class="w-100">
+        <h3 class="text-center">Experiências / projetos</h3>
+        <div>
+            <ul class="projects-list">
+                <li class="J_list">
+                    <div class="list-header">
+                        2º Lugar no HackaTrouble pela equipe #clios
+                        <a target="_blank" href="https://github.com/Magin02/light-framework" >
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </a>
+                        <img class="projects-icons" src="{{asset('assets/projects/hackatrouble.jpg')}}">
+                    </div>
+                    <div class="list-content">
+                        <div class="list-content-inner">
+                            No mês de março de 2020 tive a portunidade de participar do HackaTrouble, um hackaton organizado pelo Centro Paula Souza com o objetivo
+                            de promover ideias para ajudar as pessoas nessa pandemia. Eu e minha equipe fomos premiados em 2º lugar com a ideia do SoSale, um sistema de filas para comércios a fim de evitar aglomerações.
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+            <ul class="projects-list">
+                <li class="J_list">
+                    <div class="list-header"> Light framework
+                        <a target="_blank" href="https://github.com/Magin02/light-framework" >
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="list-content">
+                        <div class="list-content-inner">
+                            O Light framework é uma ferramenta que criei do zero com php 7 para estudo e facilitar na criação de novos projetos em php.
+                            Este framework utiliza o padrão MVC (model-view-controller) como design-pattern e twig para manipulação da view e templates.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="projects-list">
+                <li class="J_list">
+                    <div class="list-header">Faire
+                        <a target="_blank" href="http://faireapp.herokuapp.com/" >
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="list-content">
+                        <div class="list-content-inner">
+                            O Faire é um web-aplicativo para criar lista de tarefas que foi feito para estudo e testar o Light Framework, um framework em PHP criado também para estudos.</div>
+                    </div>
+                </li>
+
+            </ul>
+            <ul class="projects-list">
+                <li class="J_list">
+                    <div class="list-header"> Portfolio
+                        <a target="_blank" href="https://github.com/Magin02/portfolio" >
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="list-content">
+                        <div class="list-content-inner">
+                            Meu portfólio foi feito totalmente em Laravel e procurei fazer algo bem limpo para demonstrar minhas capacidades técnicas de forma melhor e prática com uma pagina simples e um sistema de mensagens.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="projects-list">
+                <li class="J_list">
+                    <div class="list-header">Snippets Book   | Uma rede social para programadores
+                        <a target="_blank" href="https://github.com/Magin02/snippets-book-api" >
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="list-content">
+                        <div class="list-content-inner">
+                            Snippets book é uma rede social para desenvolvedores onde os posts serão snippets. Nesse projeto pude aprender mais com laravel e seus recursos, utilizei o gitflow para organizar todo o back-end. O front-end ainda está sendo feito em VueJs.
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
         </div>
-
-            <div class="panel ">
-                <h3><a href="https://github.com/Magin02/snippets-book-api"> Snippets book</a></h3>
-                <p>
-                    Snippets book  é uma rede social para desenvolvedores onde os posts serão snippets.
-                    Nesse projeto pude aprender mais com laravel e seus recursos, utilizei o gitflow para organizar todo o back-end.
-                    O front-end ainda está sendo feito em VueJs.
-                </p>
-
-            </div>
-
-            <div class="panel">
-                <h3><a href="https://github.com/Magin02/portfolio">Portfolio</a></h3>
-                <p>
-                    Meu portfolio foi feito totalmente em Laravel e procurei fazer algo bem limpo para demonstrar minhas capacidades técnicas de forma melhor e prática com uma pagina simples e um sistema de mensagens.
-                </p>
-
-            </div>
-
-            <div class="panel ">
-                <h3>
-                    <a href="https://github.com/Magin02/info-now"> InfoNow</a></h3>
-                <p>
-                InfoNow será uma plataforma de artigos com o foco de estudo, essa plataforma será feita em php com o objetivo de me aprofundar mais na linguagem sem frameworks.
-            </div>
-
-            <div class="panel ">
-                <h3>Monitoria</h3>
-                <p>
-                    Durante 1 ano letivo tive a oportunidade de dar monitoria na ETEC Prof. Marcos Uchoas Dos Santos Penchel no meu ultimo ano, nessa monitoria foi trabalhado principalmente a lógica de programação e o raciocínio envolvido.
-                </p>
-            </div>
-
     </section>
+
+
 
 
     <section id="contact">
-        @if(count($errors) > 0)
-            <div class="alert alert-danger">
-                <ul>
-                    @foreach($errors->all() as $error)
-                        <li>{{$error}}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
-            @if(\Session::has('success'))
-                <div class="alert alert-success">
-                    <p>{{\Session::get('success')}}</p>
-                </div>
-            @endif
             <h3 class="text-center">Entre em contato</h3>
         <form method="post" action="{{url('message')}}">
             {{csrf_field()}}
-            <input name="name" placeholder="Seu nome " type="text " tabindex="1 " required>
-            <input name="email" placeholder="seu@email.com " type="email " tabindex="2 " required>
-            <input name="subject" placeholder="Assunto da mensagem " type="text " tabindex="4 " required>
-            <textarea name="content" placeholder="Conteúdo da mensagem " rows="3 " tabindex="5 " required></textarea>
+            <input name="name" placeholder="Seu nome" type="text" tabindex="1" required>
+            <input name="email" placeholder="seu@email.com" type="email" tabindex="2" required>
+            <input name="subject" placeholder="Assunto da mensagem" type="text" tabindex="4" required>
+            <textarea name="content" placeholder="Conteúdo da mensagem" rows="3" tabindex="5" required></textarea>
             <div class="form-group">
                 <input type="submit" class="btn btn_primary button" value="Enviar">
             </div>
@@ -182,7 +172,7 @@
         </div>
 
         <div class="col-md-4 col-sm-6 col-xs-12 ">
-            <ul class="social-icons ">
+            <ul class="social-icons">
                 <li><a class="github " href="https://github.com/Magin02 "><i class="fa fa-github "></i></a></li>
                 <li><a class="twitter " href="https://twitter.com/Magin02 "><i class="fa fa-twitter "></i></a></li>
                 <li><a class="facebook " href="https://www.facebook.com/gabriel.leal.77985"><i class="fa fa-facebook "></i></a></li>
@@ -192,18 +182,39 @@
         </div>
     </div>
 </footer>
+<script src="{{ asset('js/app.js') }}"> </script>
 
+@if(count($errors) > 0)
+    @foreach($errors->all() as $error)
+        <script>
+            toastr.error("{{$error}}");
+        </script>
+    @endforeach
+
+@endif
+@if(\Session::has('success'))
+    <script>
+        toastr.success("Assim que puder retornarei sua mensagem, obrigado pelo contato", "Mensagem enviada com sucesso!");
+    </script>
+@endif
 
 <script>
+
     $('.scroll').on('click', function(e) {
         e.preventDefault();
-        var id = $(this).attr('href'),
+        let id = $(this).attr('href'),
             targetOffset = $(id).offset().top;
 
         $('html, body').animate({
             scrollTop: targetOffset - 100
         }, 500);
     });
+
+    $('.list-header').on('click', function() {
+        var $J_li = $(this).parents('.J_list')
+        $J_li.hasClass('open') ? $J_li.removeClass('open') : $J_li.addClass('open');
+    })
+
 </script>
 
 </body>
