@@ -66,7 +66,7 @@
                 <li class="J_list">
                     <div class="list-header">
                         2º Lugar no HackaTrouble pela equipe #clios
-                        <a target="_blank" href="https://github.com/Magin02/light-framework" >
+                        <a target="_blank" href="https://www.hackatrouble.com.br/premiados#h.6828d6a3178848d_163" >
                             <i class="fa fa-external-link" aria-hidden="true"></i>
                         </a>
                         <img class="projects-icons" src="{{asset('assets/projects/hackatrouble.jpg')}}">
