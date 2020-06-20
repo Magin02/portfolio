@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\message\MessageStoreRequest;
 use App\Message;
 use Illuminate\Http\Request;
 
@@ -32,23 +33,13 @@ class MessageController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function store(Request $request)
+    public function store(MessageStoreRequest $request)
     {
-        $this->validate($request, [
-            'name' => 'required|max:80|min:4',
-            'email' => 'required|max:120|min:4',
-            'subject' => 'required|max:120|min:2',
-            'content' => 'required|max:700|min:10'
-        ]);
+        $message  = $request->validated();
 
-        $message = new Message(['name' => $request->get('name'),
-            'email' => $request->get('email'),
-            'subject' => $request->get('subject'),
-            'content' => $request->get('content')]);
-
-        $message->save();
-
-        return redirect()->route('portfolio.index')->with('success', 'Mensagem enviada com sucesso');
+        Message::create($message);
+        $message->sendMessageTelegram();
+        return redirect()->route('portfolio.index')->with('success', 'Mensagem enviada com sucesso!');
     }
 
     /**

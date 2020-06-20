@@ -18,5 +18,4 @@ Route::get('/', function () {
 });
 
 
-Route::resource('/portfolio', 'PortfolioController');
 Route::resource('/message', 'MessageController');
