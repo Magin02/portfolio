@@ -65,7 +65,7 @@
             <ul class="projects-list">
                 <li class="J_list">
                     <div class="list-header">
-                        2º Lugar no HackaTrouble pela equipe #clios
+                        2º Lugar no HackaTrouble
                         <a target="_blank" href="https://www.hackatrouble.com.br/premiados#h.6828d6a3178848d_163" >
                             <i class="fa fa-external-link" aria-hidden="true"></i>
                         </a>
@@ -111,7 +111,7 @@
             </ul>
             <ul class="projects-list">
                 <li class="J_list">
-                    <div class="list-header"> Portfolio
+                    <div class="list-header"> Portfólio
                         <a target="_blank" href="https://github.com/Magin02/portfolio" >
                             <i class="fa fa-external-link" aria-hidden="true"></i>
                         </a>
@@ -125,7 +125,7 @@
             </ul>
             <ul class="projects-list">
                 <li class="J_list">
-                    <div class="list-header">Snippets Book   | Uma rede social para programadores
+                    <div class="list-header">Snippets Book
                         <a target="_blank" href="https://github.com/Magin02/snippets-book-api" >
                             <i class="fa fa-external-link" aria-hidden="true"></i>
                         </a>
@@ -139,14 +139,26 @@
 
             </ul>
 
+
+            <ul class="projects-list">
+                <li class="J_list">
+                    <div class="list-header">Monitoria </div>
+                    <div class="list-content">
+                        <div class="list-content-inner">
+                            Durante 1 ano letivo tive a oportunidade de dar monitoria na ETEC Prof. Marcos Uchoas Dos Santos Penchel no meu ultimo ano, nessa monitoria foi trabalhado principalmente a lógica de programação e o raciocínio envolvido.
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
         </div>
     </section>
 
 
 
 
-    <section id="contact">
-            <h3 class="text-center">Entre em contato</h3>
+    <section id="contact" >
+        <h3 class="text-center">Entre em contato</h3>
         <form method="post" action="{{url('message')}}">
             {{csrf_field()}}
             <input name="name" placeholder="Seu nome" type="text" tabindex="1" required>
