@@ -139,6 +139,18 @@
 
             </ul>
 
+
+            <ul class="projects-list">
+                <li class="J_list">
+                    <div class="list-header">Monitoria </div>
+                    <div class="list-content">
+                        <div class="list-content-inner">
+                            Durante 1 ano letivo tive a oportunidade de dar monitoria na ETEC Prof. Marcos Uchoas Dos Santos Penchel no meu ultimo ano, nessa monitoria foi trabalhado principalmente a lógica de programação e o raciocínio envolvido.
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
         </div>
     </section>
 
@@ -146,7 +158,7 @@
 
 
     <section id="contact" >
-            <h3 class="text-center">Entre em contato</h3>
+        <h3 class="text-center">Entre em contato</h3>
         <form method="post" action="{{url('message')}}">
             {{csrf_field()}}
             <input name="name" placeholder="Seu nome" type="text" tabindex="1" required>
