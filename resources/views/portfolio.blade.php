@@ -4,18 +4,25 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Gabriel Leal</title>
-    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
+
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
 </head>
 
 <body>
-<header class="text-center ">
+<header class="text-center top-header">
 
     <img alt="me" src="/me.jpeg" id="profile-picture" />
     <div class="title ">
@@ -159,7 +166,7 @@
 
     <section id="contact" >
         <h3 class="text-center">Entre em contato</h3>
-        <form method="post" action="{{url('message')}}">
+        <form class="form-contact" method="post" action="{{url('message')}}">
             {{csrf_field()}}
             <input name="name" placeholder="Seu nome" type="text" tabindex="1" required>
             <input name="email" placeholder="seu@email.com" type="email" tabindex="2" required>
@@ -196,21 +203,18 @@
 </footer>
 <script src="{{ asset('js/app.js') }}"> </script>
 
-@if(count($errors) > 0)
-    @foreach($errors->all() as $error)
-        <script>
-            toastr.error("{{$error}}");
-        </script>
-    @endforeach
-
-@endif
-@if(\Session::has('success'))
-    <script>
-        toastr.success("Assim que puder retornarei sua mensagem, obrigado pelo contato", "Mensagem enviada com sucesso!");
-    </script>
-@endif
 
 <script>
+
+    @if(count($errors) > 0)
+        @foreach($errors->all() as $error)
+            toastr.error("{{$error}}");
+        @endforeach
+    @endif
+
+    @if(\Session::has('success'))
+        toastr.success("Assim que puder retornarei sua mensagem, obrigado pelo contato", "Mensagem enviada com sucesso!");
+    @endif
 
     $('.scroll').on('click', function(e) {
         e.preventDefault();
