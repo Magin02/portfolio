@@ -37,9 +37,9 @@ class MessageController extends Controller
     {
         $message  = $request->validated();
 
-        Message::create($message);
+        $message = Message::create($message);
         $message->sendMessageTelegram();
-        return redirect()->route('portfolio.index')->with('success', 'Mensagem enviada com sucesso!');
+        return redirect('/')->with('success', 'Mensagem enviada com sucesso!');
     }
 
     /**

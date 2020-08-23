@@ -17,7 +17,7 @@ a:link {
 
 /** Header**/
 
-header {
+.top-header {
     color: white;
     background-color: #26272b;
     padding: 30px 0 10px 0;
@@ -160,77 +160,78 @@ header {
 }
 
 
-form {
+.form-contact {
     width: 50%;
     margin: 0 auto;
-}
 
-input {
-    width: 100%;
-    border: solid 1px #26272b;
-    outline: none;
-    margin-bottom: 0.7em;
-    padding: 0;
-    background-color: rgba(0, 0, 0, 0);
-    line-height: 40px;
-    border-radius: 8px;
-}
+    input {
+        width: 100%;
+        border: solid 1px #26272b;
+        outline: none;
+        margin-bottom: 0.7em;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0);
+        line-height: 40px;
+        border-radius: 8px;
+    }
 
-textarea {
-    width: 100%;
-    margin-bottom: 0.7em;
-    outline: none;
-    padding: 0;
-    line-height: 35px;
-    border: solid 1px #26272b;
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 8px;
-}
+    textarea {
+        width: 100%;
+        margin-bottom: 0.7em;
+        outline: none;
+        padding: 0;
+        line-height: 35px;
+        border: solid 1px #26272b;
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 8px;
+    }
 
-.button {
-    width: 140px;
-    height: 60px;
-    border-color: #26272b;
-    color: #26272b;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    transition: color 150ms ease-in-out;
-    background-color: transparent;
-    margin-bottom: 10px;
-    font-size: 16px;
-    border-radius: 12px;
-}
+    .button {
+        width: 140px;
+        height: 60px;
+        border-color: #26272b;
+        color: #26272b;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        transition: color 150ms ease-in-out;
+        background-color: transparent;
+        margin-bottom: 10px;
+        font-size: 16px;
+        border-radius: 12px;
+    }
 
-.button:hover {
-    color: #000;
-}
-::-webkit-input-placeholder {
-    color: #26272b;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 0 1em;
-}
+    .button:hover {
+        color: #000;
+    }
 
-::-moz-placeholder {
-    color: #26272b;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 0 1em;
-}
+    ::-webkit-input-placeholder {
+        color: #26272b;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 0 1em;
+    }
 
-:-ms-input-placeholder {
-    color: #26272b;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 0 1em;
-}
+    ::-moz-placeholder {
+        color: #26272b;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 0 1em;
+    }
 
-:-moz-placeholder {
-    color: #26272b;
-    margin-left: 10px;
-    font-size: 14px;
-    font-weight: 600;
+    :-ms-input-placeholder {
+        color: #26272b;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 0 1em;
+    }
+
+    :-moz-placeholder {
+        color: #26272b;
+        margin-left: 10px;
+        font-size: 14px;
+        font-weight: 600;
+    }
 }
 /* Footer */
 
