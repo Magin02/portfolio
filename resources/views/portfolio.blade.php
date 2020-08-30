@@ -59,8 +59,8 @@
             <skill skill="MySQL" average-begun="1 ano" average-finished="2 anos" color="#003c8f"></skill>
             <skill skill="Linux" average-begun="1 ano" average-finished="2 anos" color="#003c8f"></skill>
             <skill skill="HTML/CSS" average-begun="1 ano" average-finished="2 anos" color="#003c8f"></skill>
-            <skill skill="Javascript" average-begun="1 mês" average-finished="6 meses" color="#003c8f"></skill>
-            <skill skill="PHP" average-begun="6 meses" average-finished="1 ano" color="#003c8f"></skill>
+            <skill skill="Javascript" average-begun="6 meses" average-finished="1 ano" color="#003c8f"></skill>
+            <skill skill="PHP" average-begun="1 ano" average-finished="2 anos" color="#003c8f"></skill>
             <skill skill="Laravel" average-begun="6 meses" average-finished="1 ano" color="#003c8f"></skill>
         </div>
 
