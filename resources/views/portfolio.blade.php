@@ -165,20 +165,7 @@
 
 
 
-    <section id="contact" >
-        <h3 class="text-center">Entre em contato</h3>
-        <form class="form-contact" method="post" action="{{url('message')}}">
-            {{csrf_field()}}
-            <input name="name" placeholder="Seu nome" type="text" tabindex="1" required>
-            <input name="email" placeholder="seu@email.com" type="email" tabindex="2" required>
-            <input name="subject" placeholder="Assunto da mensagem" type="text" tabindex="4" required>
-            <textarea name="content" placeholder="Conteúdo da mensagem" rows="3" tabindex="5" required></textarea>
-            <div class="form-group">
-                <input type="submit" class="btn btn_primary button" value="Enviar">
-            </div>
-        </form>
-
-    </section>
+   <contact-form message-url="{{url('message')}}"></contact-form>
 
 </div>
 
@@ -206,17 +193,6 @@
 
 
 <script>
-
-    @if(count($errors) > 0)
-        @foreach($errors->all() as $error)
-            toastr.error("{{$error}}");
-        @endforeach
-    @endif
-
-    @if(\Session::has('success'))
-        toastr.success("Assim que puder retornarei sua mensagem, obrigado pelo contato", "Mensagem enviada com sucesso!");
-    @endif
-
     $('.scroll').on('click', function(e) {
         e.preventDefault();
         let id = $(this).attr('href'),
