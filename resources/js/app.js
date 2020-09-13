@@ -21,6 +21,7 @@ window.Vue = require('vue');
 
 Vue.component('skill', require('./components/SkillComponent.vue').default);
 Vue.component('contact-form', require('./components/ContactForm.vue').default);
+Vue.component('experience', require('./components/ExperienceComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

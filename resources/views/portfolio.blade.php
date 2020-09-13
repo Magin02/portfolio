@@ -70,95 +70,26 @@
     <section id="experiences" class="w-100">
         <h3 class="text-center">Experiências / projetos</h3>
         <div>
-            <ul class="projects-list">
-                <li class="J_list">
-                    <div class="list-header">
-                        2º Lugar no HackaTrouble
-                        <a target="_blank" href="https://www.hackatrouble.com.br/premiados#h.6828d6a3178848d_163" >
-                            <i class="fa fa-external-link" aria-hidden="true"></i>
-                        </a>
-                        <img class="projects-icons" src="{{asset('assets/projects/hackatrouble.jpg')}}">
-                    </div>
-                    <div class="list-content">
-                        <div class="list-content-inner">
-                            No mês de março de 2020 tive a portunidade de participar do HackaTrouble, um hackaton organizado pelo Centro Paula Souza com o objetivo
-                            de promover ideias para ajudar as pessoas nessa pandemia. Eu e minha equipe fomos premiados em 2º lugar com a ideia do SoSale, um sistema de filas para comércios a fim de evitar aglomerações.
-                        </div>
-                    </div>
-                </li>
-
-            </ul>
-            <ul class="projects-list">
-                <li class="J_list">
-                    <div class="list-header"> Light framework
-                        <a target="_blank" href="https://github.com/Magin02/light-framework" >
-                            <i class="fa fa-external-link" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    <div class="list-content">
-                        <div class="list-content-inner">
-                            O Light framework é uma ferramenta que criei do zero com php 7 para estudo e facilitar na criação de novos projetos em php.
-                            Este framework utiliza o padrão MVC (model-view-controller) como design-pattern e twig para manipulação da view e templates.
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <ul class="projects-list">
-                <li class="J_list">
-                    <div class="list-header">Faire
-                        <a target="_blank" href="http://faireapp.herokuapp.com/" >
-                            <i class="fa fa-external-link" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    <div class="list-content">
-                        <div class="list-content-inner">
-                            O Faire é um web-aplicativo para criar lista de tarefas que foi feito para estudo e testar o Light Framework, um framework em PHP criado também para estudos.</div>
-                    </div>
-                </li>
-
-            </ul>
-            <ul class="projects-list">
-                <li class="J_list">
-                    <div class="list-header"> Portfólio
-                        <a target="_blank" href="https://github.com/Magin02/portfolio" >
-                            <i class="fa fa-external-link" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    <div class="list-content">
-                        <div class="list-content-inner">
-                            Meu portfólio foi feito totalmente em Laravel e procurei fazer algo bem limpo para demonstrar minhas capacidades técnicas de forma melhor e prática com uma pagina simples e um sistema de mensagens.
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <ul class="projects-list">
-                <li class="J_list">
-                    <div class="list-header">Snippets Book
-                        <a target="_blank" href="https://github.com/Magin02/snippets-book-api" >
-                            <i class="fa fa-external-link" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    <div class="list-content">
-                        <div class="list-content-inner">
-                            Snippets book é uma rede social para desenvolvedores onde os posts serão snippets. Nesse projeto pude aprender mais com laravel e seus recursos, utilizei o gitflow para organizar todo o back-end. O front-end ainda está sendo feito em VueJs.
-                        </div>
-                    </div>
-                </li>
-
-            </ul>
-
-
-            <ul class="projects-list">
-                <li class="J_list">
-                    <div class="list-header">Monitoria </div>
-                    <div class="list-content">
-                        <div class="list-content-inner">
-                            Durante 1 ano letivo tive a oportunidade de dar monitoria na ETEC Prof. Marcos Uchoas Dos Santos Penchel no meu ultimo ano, nessa monitoria foi trabalhado principalmente a lógica de programação e o raciocínio envolvido.
-                        </div>
-                    </div>
-                </li>
-
-            </ul>
+            <experience title='2º Lugar no HackaTrouble' href="https//www.hackatrouble.com.br/premiados#h.6828d6a3178848d_163">
+                No mês de março de 2020 tive a portunidade de participar do HackaTrouble, um hackaton organizado pelo Centro Paula Souza com o objetivo
+                de promover ideias para ajudar as pessoas nessa pandemia. Eu e minha equipe fomos premiados em 2º lugar com a ideia do SoSale, um sistema de filas para comércios a fim de evitar aglomerações.
+            </experience>
+            <experience title='Light framework' href="https://github.com/Magin02/light-framework">
+                O Light framework é uma ferramenta que criei do zero com php 7 para estudo e facilitar na criação de novos projetos em php.
+                Este framework utiliza o padrão MVC (model-view-controller) como design-pattern e twig para manipulação da view e templates.
+            </experience>
+            <experience title='Faire' href="http://faireapp.herokuapp.com/">
+                O Faire é um web-aplicativo para criar lista de tarefas que foi feito para estudo e testar o Light Framework, um framework em PHP criado também para estudos.
+            </experience>
+            <experience title='Portfólio' href="https://github.com/Magin02/portfolio">
+                Meu portfólio foi feito totalmente em Laravel e procurei fazer algo bem limpo para demonstrar minhas capacidades técnicas de forma melhor e prática com uma pagina simples e um sistema de mensagens.
+            </experience>
+            <experience title='Snippets Book' href="https://github.com/Magin02/snippets-book-api">
+                Snippets book é uma rede social para desenvolvedores onde os posts serão snippets. Nesse projeto pude aprender mais com laravel e seus recursos, utilizei o gitflow para organizar todo o back-end. O front-end ainda está sendo feito em VueJs.
+            </experience>
+            <experience title='Monitoria'>
+                Durante 1 ano letivo tive a oportunidade de dar monitoria na ETEC Prof. Marcos Uchoas Dos Santos Penchel no meu ultimo ano, nessa monitoria foi trabalhado principalmente a lógica de programação e o raciocínio envolvido.
+            </experience>
         </div>
     </section>
 
