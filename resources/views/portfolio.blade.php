@@ -106,7 +106,7 @@
 
 
 
-   <contact-form message-url="{{url('message')}}"></contact-form>
+   <contact-form message-url="/message"></contact-form>
 
 </div>
 
