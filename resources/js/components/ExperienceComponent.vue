@@ -1,27 +1,27 @@
 <template>
-    <ul class="projects-list">
-        <li class="J_list">
-            <div class="list-header">
-                {{title}}
-                <a target="_blank" :href="href" >
-                    <i class="fa fa-external-link" aria-hidden="true"></i>
-                </a>
-<!--                <img class="projects-icons" src="{{asset('assets/projects/hackatrouble.jpg')}}">-->
+    <div class="card">
+        <div class="card-header d-flex ">
+            <h3>{{ company }}</h3>
+            <img class="ml-2" width="50" height="30" :src="src"/>
+            <div class="ml-auto float-right d-flex mt-1">
+                <p class="font-weight-bold">Cargo: &nbsp; </p> {{ position }}
+                <p class="font-weight-bold ml-3"> Periodo: &nbsp;</p>  {{ date }}
             </div>
-            <div class="list-content">
-                <div class="list-content-inner">
-                    <slot></slot>
-                </div>
-            </div>
-        </li>
-    </ul>
+
+        </div>
+        <div class="card-body">
+            <slot></slot>
+        </div>
+    </div>
 </template>
 
 <script>
 export default {
     props:{
-        href: String,
-        title: String,
+        src: String,
+        position: String,
+        date: String,
+        company: String
     }
 }
 </script>
