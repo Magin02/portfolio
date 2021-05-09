@@ -17,5 +17,6 @@ Route::get('/', function () {
     return view('portfolio');
 });
 
-
-Route::resource('/message', 'MessageController');
+Route::group(['middleware' => 'throttle:2,3'], function (){
+    Route::resource('/message', 'MessageController');
+});

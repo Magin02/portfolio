@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\message\MessageStoreRequest;
 use App\Message;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 
 class MessageController extends Controller
@@ -30,16 +32,26 @@ class MessageController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\RedirectResponse
+     * @param MessageStoreRequest $request
+     * @return JsonResponse
      */
     public function store(MessageStoreRequest $request)
     {
-        $message  = $request->validated();
+        try {
 
-        $message = Message::create($message);
+
+        $data  = $request->validated();
+
+        $message = new Message;
+        $message->name = $data['name'];
+        $message->email = $data['email'];
+        $message->subject = $data['subject'];
+        $message->content = $data['content'];
         $message->sendMessageTelegram();
-        return redirect('/')->with('success', 'Mensagem enviada com sucesso!');
+            return response()->json(['message' => 'Mensagem enviada com sucesso!'],201);
+        } catch (\Exception $e){
+            return response()->json(['message' => 'Erro ao enviar mensagem. Indisponivel no momento 😟'],201);
+        }
     }
 
     /**
@@ -67,7 +79,7 @@ class MessageController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param Request $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
